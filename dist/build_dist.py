@@ -1,8 +1,8 @@
 """樱响（SakuraSound）发行包构建脚本（Linux 上跑，产出 Windows 可用的包）。
 
 产出：
-  SakuraSound-Portable-v1.0.0.zip —— 便携包：内嵌 Python + 预装依赖，解压双击即用
-  SakuraSound-Setup-v1.0.0.exe    —— 安装包（需 makensis）：装到用户目录，带快捷方式与卸载
+  SakuraSound-Portable-v1.0.1.zip —— 便携包：内嵌 Python + 预装依赖，解压双击即用
+  SakuraSound-Setup-v1.0.1.exe    —— 安装包（需 makensis）：装到用户目录，带快捷方式与卸载
                               （本版不带均衡器、不带音频驱动插件，只做响度均衡）
 
 Qt 桌面版：双击 SakuraSound.exe 打开原生程序窗口（不再是网页），
@@ -77,7 +77,7 @@ def build_staging():
         shutil.copy(os.path.join(PROJECT, name), os.path.join(STAGING, name))
     with open(os.path.join(STAGING, "README.txt"), "w", encoding="utf-8") as f:
         f.write(
-            "樱响 SakuraSound v1.0.0 使用说明\n"
+            "樱响 SakuraSound v1.0.1 使用说明\n"
             "双击 SakuraSound.exe 即可打开桌面程序窗口（不需要浏览器、不需要装 Python）。\n"
             "本版只做系统响度均衡，不带均衡器，也不需要安装任何音频驱动插件。\n"
         "界面为浅色玻璃＋樱花风，字体为内置站酷快乐体圆体。\n"
@@ -116,7 +116,7 @@ def build_launcher():
 
 
 def build_portable_zip():
-    out = os.path.join(PROJECT, "SakuraSound-Portable-v1.0.0.zip")
+    out = os.path.join(PROJECT, "SakuraSound-Portable-v1.0.1.zip")
     if os.path.exists(out):
         os.remove(out)
     with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
@@ -133,12 +133,12 @@ def build_installer():
     if not makensis:
         print("未找到 makensis，跳过安装包（可用便携包）")
         return None
-    out = os.path.join(PROJECT, "SakuraSound-Setup-v1.0.0.exe")
+    out = os.path.join(PROJECT, "SakuraSound-Setup-v1.0.1.exe")
     if os.path.exists(out):
         os.remove(out)
     subprocess.run([makensis, os.path.join(HERE, "installer.nsi")], cwd=HERE, check=True)
     # makensis 的 OutFile 是相对路径，落在 HERE
-    built = os.path.join(HERE, "SakuraSound-Setup-v1.0.0.exe")
+    built = os.path.join(HERE, "SakuraSound-Setup-v1.0.1.exe")
     if os.path.exists(built):
         shutil.move(built, out)
     return out

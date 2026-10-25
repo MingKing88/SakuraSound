@@ -10,7 +10,7 @@
 !include "MUI2.nsh"
 
 Name "樱响"
-OutFile "SakuraSound-Setup-v1.0.0.exe"
+OutFile "SakuraSound-Setup-v1.0.1.exe"
 InstallDir "$LOCALAPPDATA\SakuraSound"
 RequestExecutionLevel user
 SetCompressor /SOLID lzma
@@ -36,7 +36,7 @@ Section "樱响" SecMain
   WriteUninstaller "$INSTDIR\Uninstall.exe"
   WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\SakuraSound" "DisplayName" "樱响"
   WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\SakuraSound" "UninstallString" "$INSTDIR\Uninstall.exe"
-  WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\SakuraSound" "DisplayVersion" "1.0.0"
+  WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\SakuraSound" "DisplayVersion" "1.0.1"
   ; 安装即开机自启动：HKCU Run 键，值名与应用内一致（SakuraSound），卸载段已会删掉它
   WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Run" "SakuraSound" '"$INSTDIR\SakuraSound.exe"'
 SectionEnd

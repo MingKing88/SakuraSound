@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/MingKing88/SakuraSound/releases"><img src="https://img.shields.io/badge/release-v1.0.0-8b7cff?style=flat-square" alt="最新正式版"></a>
+  <a href="https://github.com/MingKing88/SakuraSound/releases"><img src="https://img.shields.io/badge/release-v1.0.1-8b7cff?style=flat-square" alt="最新正式版"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-838da8?style=flat-square" alt="许可证 MIT"></a>
   <img src="https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-838da8?style=flat-square" alt="支持 Windows 10 与 11">
   <img src="https://img.shields.io/badge/built%20with-Python%20%2B%20PySide6%20%2B%20pycaw-838da8?style=flat-square" alt="使用 Python、PySide6 与 pycaw">
