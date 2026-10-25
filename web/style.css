@@ -1,0 +1,59 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: #12151c; color: #e6e9ef;
+  font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+}
+header {
+  display: flex; align-items: baseline; gap: 12px;
+  padding: 18px 24px 8px; max-width: 760px; margin: 0 auto;
+}
+header h1 { margin: 0; font-size: 26px; letter-spacing: 1px; }
+.subtitle { color: #9aa3b2; }
+.badge {
+  margin-left: auto; font-size: 12px; padding: 3px 10px; border-radius: 12px;
+  background: #2a3140; color: #9aa3b2;
+}
+.badge.real { background: #14351f; color: #7fd492; }
+.badge.mock { background: #3d2f10; color: #e8c468; }
+main { max-width: 760px; margin: 0 auto; padding: 8px 16px 32px; }
+.card {
+  background: #1c212b; border-radius: 12px; padding: 16px 18px; margin: 12px 0;
+}
+.card h2 { margin: 0 0 12px; font-size: 17px; }
+.row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.row.controls { gap: 22px; }
+.hint { color: #9aa3b2; font-size: 13px; margin: 8px 0 0; line-height: 1.6; }
+.status { color: #c8cfdb; font-size: 13px; margin: 10px 0 0; min-height: 18px; }
+.pct { min-width: 44px; font-variant-numeric: tabular-nums; }
+
+select, button {
+  background: #2a3140; color: #e6e9ef; border: 1px solid #3a4356;
+  border-radius: 8px; padding: 7px 12px; font-size: 14px; cursor: pointer;
+}
+button:hover { background: #343d4f; }
+select { flex: 1; min-width: 220px; }
+
+input[type="range"] { accent-color: #4a90d9; cursor: pointer; }
+#master-slider { flex: 1; }
+#target-slider { width: 130px; vertical-align: middle; }
+
+.app-row {
+  display: flex; align-items: center; gap: 10px; padding: 8px 0;
+  border-top: 1px solid #2a3140;
+}
+.app-row:first-child { border-top: none; }
+.app-name { width: 130px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bar { flex: 1; height: 16px; background: #2a3140; border-radius: 8px; position: relative; overflow: hidden; min-width: 120px; }
+.bar-fill { height: 100%; background: #4a90d9; border-radius: 8px; width: 0%; transition: width 0.12s linear; }
+.bar-marker { position: absolute; top: 0; bottom: 0; width: 2px; background: #e67e22; }
+.app-vol { width: 120px; }
+.app-pct { min-width: 44px; font-variant-numeric: tabular-nums; font-size: 13px; }
+
+.btns button { margin: 8px 4px 4px 0; }
+.bands { max-height: 380px; overflow-y: auto; margin-top: 8px; padding-right: 6px; }
+.band-row { display: flex; align-items: center; gap: 8px; padding: 5px 0; border-top: 1px solid #2a3140; font-size: 13px; }
+.band-row:first-child { border-top: none; }
+.band-name { width: 62px; }
+.band-freq { width: 74px; background: #2a3140; color: #e6e9ef; border: 1px solid #3a4356; border-radius: 6px; padding: 4px 6px; }
+.band-gain, .band-q { width: 110px; }
+.band-val { min-width: 44px; font-variant-numeric: tabular-nums; }

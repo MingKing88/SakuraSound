@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VolRider — Windows 音量统一</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>VolRider</h1>
+  <span class="subtitle">Windows 音量统一</span>
+  <span id="mode-badge" class="badge">连接中…</span>
+</header>
+
+<main>
+  <section class="card">
+    <h2>输出设备</h2>
+    <div class="row">
+      <select id="device-select"></select>
+      <button id="device-set">设为默认</button>
+    </div>
+    <p class="hint">切换用的是 Windows 未公开接口，个别系统上失效时会提示你去系统声音设置里手动切换。</p>
+  </section>
+
+  <section class="card">
+    <h2>系统总音量</h2>
+    <div class="row">
+      <input id="master-slider" type="range" min="0" max="100" step="1" value="100">
+      <span id="master-label" class="pct">100%</span>
+    </div>
+    <p class="hint">总音量由你控制，均衡器不碰它；总音量一调，均衡后的整体响度就跟着动。</p>
+  </section>
+
+  <section class="card">
+    <div class="row controls">
+      <label><input id="enabled-check" type="checkbox" checked> 自动均衡</label>
+      <label>均衡基准上限
+        <input id="target-slider" type="range" min="50" max="90" step="1" value="70">
+        <span id="target-label" class="pct">70%</span>
+      </label>
+      <label><input id="autostart-check" type="checkbox"> 开机自启动</label>
+    </div>
+    <p id="status" class="status">正在读取音频会话…</p>
+  </section>
+
+  <section class="card">
+    <h2>各音源实时响度</h2>
+    <p class="hint">条形 = 会话峰值 × 总音量，即实际听到的响度；橙色竖线 = 均衡基准。你手动改某应用音量时，它的自动均衡会自动关闭。</p>
+    <div id="app-list"></div>
+    <p id="app-empty" class="hint">当前没有正在发声的应用。</p>
+  </section>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
