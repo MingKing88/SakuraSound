@@ -144,6 +144,12 @@ python qt_app.py
   手动改音量后该应用的“自动”勾应同步取消，不再被自动均衡。如果还被拉动，请在 Issues 里附上应用名与操作步骤。
 </details>
 
+## 版权与借鉴
+
+樱响以 MIT 协议开源（见 [LICENSE](LICENSE)，Copyright © 2026 YearnRiver）：可以自由使用、借鉴、复制粘贴部分代码，但请标明出处——樱响 SakuraSound（YearnRiver），并附上仓库链接 https://github.com/YearnRiver/SakuraSound。第三方代码与字体仍归各自作者，见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+
+You are welcome to reuse or copy parts of this project under the MIT License, provided you credit the source: SakuraSound by YearnRiver, https://github.com/YearnRiver/SakuraSound.
+
 ## 一起把樱响做得更好
 
 欢迎修复问题、完善文档，或分享你的使用建议。贡献方式见 [CONTRIBUTING.md](CONTRIBUTING.md)。
