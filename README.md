@@ -30,6 +30,10 @@
 
 樱响是一款 Windows 系统响度均衡工具：监听各应用的音频会话峰值，自动推拉混音器里的应用音量，让不同音源保持同一水平。它是“音量骑手”路线，只调会话音量，**不碰音频样本、不装音频驱动、不改系统音频链路**。均衡器已去掉，当前版本只做响度均衡。
 
+**English version:**
+
+SakuraSound is a Windows loudness equalizer: it listens to each app's audio session peaks and automatically adjusts the volume of each app in the mixer, so different sources stay at the same level. It follows the "volume rider" approach, adjusting only session volume — **it never touches audio samples, installs no audio drivers, and does not modify the system audio chain**. The equalizer has been removed; the current version only does loudness equalization.
+
 ## 交流与支持
 
 遇到问题请通过 [GitHub Issues](https://github.com/MingKing88/SakuraSound/issues) 提交，附上系统、樱响版本、复现步骤与已脱敏的截图。欢迎分享使用经验与改进建议。
