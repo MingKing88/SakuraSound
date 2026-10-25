@@ -5,17 +5,17 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/MingKing88/SakuraSound/releases"><img src="https://img.shields.io/badge/release-v1.0.1-8b7cff?style=flat-square" alt="最新正式版"></a>
+  <a href="https://github.com/YearnRiver/SakuraSound/releases"><img src="https://img.shields.io/badge/release-v1.0.1-8b7cff?style=flat-square" alt="最新正式版"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-838da8?style=flat-square" alt="许可证 MIT"></a>
   <img src="https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-838da8?style=flat-square" alt="支持 Windows 10 与 11">
   <img src="https://img.shields.io/badge/built%20with-Python%20%2B%20PySide6%20%2B%20pycaw-838da8?style=flat-square" alt="使用 Python、PySide6 与 pycaw">
 </p>
 
 <p align="center">
-  <a href="https://github.com/MingKing88/SakuraSound/releases"><strong>下载最新版 ↗</strong></a> &nbsp; · &nbsp;
+  <a href="https://github.com/YearnRiver/SakuraSound/releases"><strong>下载最新版 ↗</strong></a> &nbsp; · &nbsp;
   <a href="#快速上手">快速上手</a> &nbsp; · &nbsp;
   <a href="#功能一览">功能一览</a> &nbsp; · &nbsp;
-  <a href="https://github.com/MingKing88/SakuraSound/issues">反馈问题</a>
+  <a href="https://github.com/YearnRiver/SakuraSound/issues">反馈问题</a>
 </p>
 
 <p align="center">
@@ -36,7 +36,7 @@ SakuraSound is a Windows loudness equalizer: it listens to each app's audio sess
 
 ## 交流与支持
 
-遇到问题请通过 [GitHub Issues](https://github.com/MingKing88/SakuraSound/issues) 提交，附上系统、樱响版本、复现步骤与已脱敏的截图。欢迎分享使用经验与改进建议。
+遇到问题请通过 [GitHub Issues](https://github.com/YearnRiver/SakuraSound/issues) 提交，附上系统、樱响版本、复现步骤与已脱敏的截图。欢迎分享使用经验与改进建议。
 
 ## 致谢
 
@@ -93,7 +93,7 @@ SakuraSound is a Windows loudness equalizer: it listens to each app's audio sess
 
 ### 1. 下载安装包或便携包
 
-前往 [GitHub Releases](https://github.com/MingKing88/SakuraSound/releases)，下载最新版：
+前往 [GitHub Releases](https://github.com/YearnRiver/SakuraSound/releases)，下载最新版：
 
 | 你的设备 | 安装包 |
 | --- | --- |
